@@ -7,6 +7,7 @@ import { default as metadata } from 'metadata';
 import Command from 'command';
 import { Trace } from '@aiteq/trace';
 
+@Trace()
 export default class Fuzzy {
   @Trace()
   public static async search(that: Partial<Command>, choices: string[]) {
